@@ -49,6 +49,12 @@ The Arduino Nano polls user input (buttons/toggle), triggers audio playback via 
 
 > DFPlayer communicates over `SoftwareSerial` (D11 = RX, D10 = TX on the Nano side). A 1kΩ resistor is placed in series on the line into the DFPlayer's RX pin to protect it from logic-level mismatch.
 
+## PCB Layout
+<img width="621" height="425" alt="image" src="https://github.com/user-attachments/assets/2f051f3d-3357-49bf-b7b0-b756aed7bba4" />
+<img width="450" height="311" alt="image" src="https://github.com/user-attachments/assets/77484cd7-2630-49d3-9d91-507e74035273" />
+<img width="369" height="256" alt="image" src="https://github.com/user-attachments/assets/f913c6c0-2d85-41db-bc5d-b851ae189dca" />
+
+
 ## How the AGC Logic Works
 
 1. The microphone (MAX9814) continuously outputs an analog signal on `A0` representing ambient sound pressure.
@@ -75,7 +81,6 @@ All three cases confirmed correct sensor-to-signal integration and real-time ada
 ## Files
 
 - `AGC.ino` — Full Arduino sketch (setup, main loop, AGC/noise-monitoring logic)
-- Full write-up (system design, schematic, PCB layout, testing results, references): see the project report PDF.
 
 ## Known Limitations / Future Work
 
